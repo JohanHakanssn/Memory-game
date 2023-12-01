@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <form class="form__player1">
+        <input type="text" placeholder="Spelare 1" class="user user__name1" />
+      </form>
+      <button class="btn" onclick="saveUserName()">Starta</button>
+      <form class="form__player2">
+        <input type="text" placeholder="Spelare 2" class="user user__name2" />
+      </form>
+    </header>
+
+    <article>
+      <p class="p__player1"><strong>Spelare 1</strong></p>
+      <p class="spelare1__poäng">0</p>
+      <h3 class="">Poäng</h3>
+      <p class="spelare2__poäng">0</p>
+      <p class="p__player2"><strong>Spelare 2</strong></p>
+    </article>
+
+    <article>
+      <h1>MEMORY GAME</h1>
+    </article>
+
+    <article class="article__winner__oavgjort">
+      <p class="p__winner"><strong>Vinnare</strong></p>
+      <p class="p__oavgjort"><strong>Oavgjort</strong></p>
+    </article>
+
+    <div class="game__board__too__center">
+      <div class="game__container">
+        <div class="memory-game"></div>
+      </div>
+    </div>
+
+    <article>
+      <button onclick="restart__btn()" class="btn">Starta om</button>
+    </article>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+*,
+*::before *::backdrop {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  background-color: lightgray;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(95, 95, 95, 0.603);
+  border: solid black 1px;
+  height: 5rem;
+}
+
+article {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.game__board__too__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__container {
+  width: 680px;
+  height: 450px;
+  margin: 2rem;
+}
+
+.memory-game {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(181, 253, 163);
+  border: solid black 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.7s;
+  transform: rotateY(180deg);
+  position: relative;
+}
+
+.card span {
+  position: absolute;
+  visibility: hidden;
+}
+
+.card.flipped span {
+  visibility: visible;
+}
+
+.p__winner {
+  display: none;
+  background-color: rgb(0, 235, 0);
+  border: solid black 2px;
+  font-size: 3rem;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.p__oavgjort {
+  display: none;
+  background-color: rgb(235, 231, 0);
+  border: solid black 2px;
+  font-size: 3rem;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.card.matched {
+  background-color: rgb(24, 209, 24);
+}
+
+.card.matched-player2 {
+  background-color: rgb(33, 33, 173);
+}
+
+.btn {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(181, 253, 163);
+  border: solid black 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(9, 43, 0, 0.568);
+  transition: 200ms;
+}
